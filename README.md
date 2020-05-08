@@ -19,7 +19,7 @@ your explanation, ensure that you outline activities from Scrum that you use.
 > Discuss the competitive advantages might be gained in developing the new information
 system. Identify and discuss the possible adverse effects for this Business if its information
 system project fails.
-asdf
+
 
 ### Note
 > Document in GitHub all your iteration and models as you progress.
