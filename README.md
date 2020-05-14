@@ -22,3 +22,4 @@ system project fails.
 
 ### Note
 > Document in GitHub all your iteration and models as you progress.
+> Q/A session used in problem definition must be added to the appendix of the report
