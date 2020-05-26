@@ -8,6 +8,27 @@ The objective of the project is to improve the operation of the company's call m
 ### Problem definition
 The travel company is in need of a new call management system to improve sales efficiency. Relationship managers (RM) must be matched with customers based on both the RM's stastical profile and the customers. A tool known as the _Profiler tool_ will be used to develop these statistics. The system will use this information to select which RMs should attend to which customers. The new system must also be capable of effectively routing inbound calls depending on the customer's profile, prioritising those that are more likely to purchase packages. During peak times, an _Interactive Voice Response_ unit is required to prompt basic questions before an _Automatic Call Distributor_ routes the call to the first available RM. For outbound calls the system must be able to retrieve a list of potential customers using information from a database and then generate a suitable script for the matching RM that will handle the call.
 
+# Stakeholders
+### Major stakeholders
+- Travel Company (Product owner)
+- Relationship Managers
+- End-customers
+
+### Minor stakeholders
+- IT/Database engineer
+- Call/Routing engineer
+
+### Stakeholder information
+**Travel Company (Product owner)** refers to the owner of the travel agency who employs relationship managers. The owner holds a stake in the system due to their ownership of the company and is the client of the software project.
+
+**Relationship Managers** are employees of the travel agency who accept calls/enquiries from customers. Their role is to sell travel packages offered by the travel agency. The function of their role will largely remain similar in the new system but with enhancements to improve sales capability.
+
+**End-customers** are those who seek to purchase travel packages from the agency. Customers are able to call the travel agency and are expected to be routed to a relationship manager to talk to. The new system will improve on this by allowing simple questions to be automatically answered before a relationship manager is connected with the customer.
+
+**IT/Database engineer** is responsible for the handling of data regarding relationship manager statistics (their strengths, field of expertise, etc) and customers. Customer data will be used to measure sale probability. The database engineer is responsible for the management and correction of this private data.
+
+**Call/Routing engineer** is responsible for the operation of the in-house call management centre software. They are responsible for the maintenance of the system (both old and new) and its day to day operation.
+
 ### Point of View (POV) Statements
 The following POV statements reflect the requirements of the new system and its objectives.
 
@@ -31,29 +52,38 @@ The following POV statements reflect the requirements of the new system and its 
 
 - The new system needs to keep statistics on customers in a database so that analysis can be performed to determine which customers are more likely to purchase travel packages and call back/answer.
 
-# Stakeholders
-### Major stakeholders
-- Travel Company (Product owner)
-- Relationship Managers
-- End-customers
+# Design Thinking Approach
 
-### Minor stakeholders
-- IT/Database engineer
-- Call/Routing engineer
+### How might we (HMW) statements and brainstorming
+The following HMW statements are developed from the earlier POV statements. A brainstorming section is added for each HMW statement specifying how each statement can be solved.
 
-### Stakeholder information
-**Travel Company (Product owner)** refers to the owner of the travel agency who employs relationship managers. The owner holds a stake in the system due to their ownership of the company and is the client of the software project.
+- **How might we develop a call management system that will organise currently employed relationship managers based on their strengths and past experiences?**
 
-**Relationship Managers** are employees of the travel agency who accept calls/enquiries from customers. Their role is to sell travel packages offered by the travel agency. The function of their role will largely remain similar in the new system but with enhancements to improve sales capability.
+Relationship managers all have varying past experiences (travelling to different countries, varying cultural background, etc.) so organising them based on valuable assets and skillsets will allow the system to evaluate which relationship managers are best grouped together on shift. The skillsets of RMs on shift together should encompass all (or most) holiday packages being sold by the agency so that all customers can be answered to by a RM. Packages that sell more often should have a greater number of RMs to accommodate for increased customers. The system will quantify the skills of relationship managers based on the properties of packages, such as country/destination, cultural significance, language, attraction type (honeymoon, urban/natural sightseeing, heritage exploration, etc.). The system will generate package scores for each RM based on how many tags/properties match. A higher score signifies a greater understanding/ability to sell the holiday package by the RM.
 
-**End-customers** are those who seek to purchase travel packages from the agency. Customers are able to call the travel agency and are expected to be routed to a relationship manager to talk to. The new system will improve on this by allowing simple questions to be automatically answered before a relationship manager is connected with the customer.
+- **How might we use the call system to bring in new customers that would not ordinarly call themselves?**
 
-**IT/Database engineer** is responsible for the handling of data regarding relationship manager statistics (their strengths, field of expertise, etc) and customers. Customer data will be used to measure sale probability. The database engineer is responsible for the management and correction of this private data.
+Outbound calls are a new feature to the system not present in the current/old system. The goal of outbound calls is to expand the existing customer base. The system will automatically search through a customer database where phone numbers are indexed. Customer details will also be included in this database, such as name, address, and any important data that will aid in the RM's understanding of the customer. During work hours, the system will analyse all RMs on shift and reference the database for potential customers based on available RM skillsets. Each selected customer will then be assigned a holiday package that the system determines they are most likely to purchase. Customers are then prioritised based on purchase probability, and then assigned to RMs on shift depending on RM availability and RM knowledge/skillset (whether the customer's package matches the RM). Each RM will then be queued with their assigned customers. Whenever they are idle, the system will automatically dial the customer for them and direct the call to the RM.
 
-**Call/Routing engineer** is responsible for the operation of the in-house call management centre software. They are responsible for the maintenance of the system (both old and new) and its day to day operation.
+- **How might we match relationship managers with customers based on their interests/skills/experiences?**
 
-# Approach
-> Describe your approach from a Design Thinking principles perspective.
+Customer data in the database will include tags that are matched with tags in the relationship manager database. RM to customer compatibility will be determined based on these matching properties. Holiday packages that the customer is interested in will contribute significantly to RM-customer matching. Customer type will be determined by the holiday package they are most likely to buy (either inferred by the system or by questions answered by the automatic voice system) and this will be the main factor that matches them to an RM. Customer and RM tag similarity (language, heritage/country of origin, etc) will then be used to decide between which RMs the customer should be matched with shouldd there be multiple RMs on shift who handle the same packages.
+
+- **How might we organise relevant information for relationship managers when we connect them to outbound calls with prospective customers?**
+
+
+- **How might we add newly hired relationship managers to the system?**
+
+- **How might we pair customers who call?**
+
+- **How might we route customers between the automated system and relationship managers?**
+
+- **How might we organise calling customers based on priority?**
+
+- **How might we solicit information from customers during peak hours using an automated voice system?**
+
+- **How might we track customer statistics and information to determine purchase probability?**
+
 
 # Explain the use of Scrum
 > Explain the agile methodology, namely, Scrum you have used to carry out the procedure. In
