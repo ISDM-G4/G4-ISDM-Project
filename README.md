@@ -8,27 +8,6 @@ The objective of the project is to improve the operation of the company's call m
 ### Problem definition
 The travel company is in need of a new call management system to improve sales efficiency. Relationship managers (RM) must be matched with customers based on both the RM's stastical profile and the customers. A tool known as the _Profiler tool_ will be used to develop these statistics. The system will use this information to select which RMs should attend to which customers. The new system must also be capable of effectively routing inbound calls depending on the customer's profile, prioritising those that are more likely to purchase packages. During peak times, an _Interactive Voice Response_ unit is required to prompt basic questions before an _Automatic Call Distributor_ routes the call to the first available RM. For outbound calls the system must be able to retrieve a list of potential customers using information from a database and then generate a suitable script for the matching RM that will handle the call.
 
-# Stakeholders
-### Major stakeholders
-- Travel Company (Product owner)
-- Relationship Managers
-- End-customers
-
-### Minor stakeholders
-- IT/Database engineer
-- Call/Routing engineer
-
-### Stakeholder information
-**Travel Company (Product owner)** refers to the owner of the travel agency who employs relationship managers. The owner holds a stake in the system due to their ownership of the company and is the client of the software project.
-
-**Relationship Managers** are employees of the travel agency who accept calls/enquiries from customers. Their role is to sell travel packages offered by the travel agency. The function of their role will largely remain similar in the new system but with enhancements to improve sales capability.
-
-**End-customers** are those who seek to purchase travel packages from the agency. Customers are able to call the travel agency and are expected to be routed to a relationship manager to talk to. The new system will improve on this by allowing simple questions to be automatically answered before a relationship manager is connected with the customer.
-
-**IT/Database engineer** is responsible for the handling of data regarding relationship manager statistics (their strengths, field of expertise, etc) and customers. Customer data will be used to measure sale probability. The database engineer is responsible for the management and correction of this private data.
-
-**Call/Routing engineer** is responsible for the operation of the in-house call management centre software. They are responsible for the maintenance of the system (both old and new) and its day to day operation.
-
 ### Point of View (POV) Statements
 The following POV statements reflect the requirements of the new system and its objectives.
 
@@ -52,6 +31,28 @@ The following POV statements reflect the requirements of the new system and its 
 
 - The new system needs to keep statistics on customers in a database so that analysis can be performed to determine which customers are more likely to purchase travel packages and call back/answer.
 
+# Stakeholders
+### Major stakeholders
+- Travel Company (Product owner)
+- Relationship Managers
+- End-customers
+
+### Minor stakeholders
+- IT/Database engineer
+- Call/Routing engineer
+
+### Stakeholder information
+**Travel Company (Product owner)** refers to the owner of the travel agency who employs relationship managers. The owner holds a stake in the system due to their ownership of the company and is the client of the software project.
+
+**Relationship Managers** are employees of the travel agency who accept calls/enquiries from customers. Their role is to sell travel packages offered by the travel agency. The function of their role will largely remain similar in the new system but with enhancements to improve sales capability.
+
+**End-customers** are those who seek to purchase travel packages from the agency. Customers are able to call the travel agency and are expected to be routed to a relationship manager to talk to. The new system will improve on this by allowing simple questions to be automatically answered before a relationship manager is connected with the customer.
+
+**IT/Database engineer** is responsible for the handling of data regarding relationship manager statistics (their strengths, field of expertise, etc) and customers. Customer data will be used to measure sale probability. The database engineer is responsible for the management and correction of this private data.
+
+**Call/Routing engineer** is responsible for the operation of the in-house call management centre software. They are responsible for the maintenance of the system (both old and new) and its day to day operation.
+
+
 # Design Thinking Approach
 
 ### How might we (HMW) statements and brainstorming
@@ -71,7 +72,6 @@ Customer data in the database will include tags that are matched with tags in th
 
 - **How might we organise relevant information for relationship managers when we connect them to outbound calls with prospective customers?**
 
-
 - **How might we add newly hired relationship managers to the system?**
 
 - **How might we pair customers who call?**
@@ -89,17 +89,56 @@ Customer data in the database will include tags that are matched with tags in th
 > Explain the agile methodology, namely, Scrum you have used to carry out the procedure. In
 your explanation, ensure that you outline activities from Scrum that you use.
 
+
 # Assumptions
 > List assumptions you have made in the systems analysis.
+
 
 # Gain and Risk
 > Discuss the competitive advantages might be gained in developing the new information
 system. Identify and discuss the possible adverse effects for this Business if its information
 system project fails.
+
 Better tailored holiday packages, advice is given off a (firsthand) experience so the customer will have a more enjoyable time, matching similar RM's and end users means RM's can advise on what they wanted to change about their own experience and pass it to the end user. This more tailored package means customers are offered a specific type of product and not a generic product that other travel companies might offer which might have included poor activities.  
 Customers develop deeper connections if the RM they are talking to is able to personalise a trip based on past experience, which from a business perspective means they are able to upsell/add to the product meaning higher profits.
 failure can refer to failure in development which means money invested is waste or another type of failure is performanc/security failure where it can be hacked?
 
-### Note
-> Document in GitHub all your iteration and models as you progress.
-> Q/A session used in problem definition must be added to the appendix of the report
+
+# Appendix
+
+### Q and A roleplay with relevant stakeholders
+
+### Analyst/Developer (A) and End user (U)
+**A:** What is your main reason for using a travel company?
+
+**U:** I want to receive advice for a holiday or travel destination I have planned. A travel company will help me plan my itinerary.
+
+**A:** Why would you prefer to call the travel company over visiting in person?
+
+**U:** Calling is helpful when I don't have the time to visit or there are no agencies near me.
+
+**A:** What do you expect as a service from the employee answering your call?
+
+**U:** I expect them to be able to help me with any questions I have regarding the travel destination and for them to be knowledgeable enough to give me recommendations if I don't have any in mind.
+
+### Analyst/Developer (A) and Relationship Manager (R)
+**A:** What do you prefer about calls over direct customer visits?
+
+**R:** A call allows me to work without any consideraion of the customer, other than what they're saying. I can focus on the work itself.
+
+**A:** What's your biggest problem with the current calling system?
+
+**R:** Often when I answer a call, I am not well equipped to answer their questions as I only have general information prepared beforehand. While I may specialise in specific packages, such as Europe, customers could be calling about Japan or the Phillipines and I would have to quickly bring up material that I'm unfamiliar with.
+
+**A:** What do you expect out of the new system?
+
+**R:** I'd like customers tailored specifically to my skillset, so that I can easily answer their questions without getting flustered trying to bring up materials and details on the package I'm trying to sell. The interactive voice response unit will also give me time to breathe during peak hours, letting customers answer basic questions so I don't have to go through them myself.
+
+### Analyst/Developer (A) and Travel company/Product owner (P)
+**A:** What do you expect to gain from this new system?
+
+**P:** I expect a greater efficiency in call turnover rates and employee utilisation, allowing me to hire less relationship managers but have them work to their full potential. The call system should also be fast, as a lot of maintenance costs of the current call system goes to paying for long call times. This should give us a greater profit margin.
+
+**A:** What do you think of the outbound call system?
+
+**P:** I think it's great that it can bring in customers who are on the fence about their travel, or otherwise would have never heard of our agency before. I think it will greatly increase the number of customers we receive.
