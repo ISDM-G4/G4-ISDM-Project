@@ -72,18 +72,31 @@ Customer data in the database will include tags that are matched with tags in th
 
 - **How might we organise relevant information for relationship managers when we connect them to outbound calls with prospective customers?**
 
+The system will automatically sort through the list of outbound customers and match them with qualified relationship managers. The system will organise which packages the customer is most likely to purchase, which will be known to the relationship manager in advance. Any relevant information regarding the holiday package stored in the system will be given to the relationship manager in advance to supplement their sales effort during the call.
+
 - **How might we add newly hired relationship managers to the system?**
+
+Newly hired relationship managers will have their profiles initialised upon hiring. Basic information such as name, country of origin, date of birth, visited countries, etc. will be input into the system and stored in the database. The system will use this to build their profile and determine which packages the RM is best suited to selling. IT/database engineers will be tasked with adding new RMs to the system.
 
 - **How might we pair customers who call?**
 
+All customers who call in will be organised into a master queue by the system where they are organised based on priority. Customers that are more likely to purchase packages (determined by the system) will be prioritised higher. Each RM on shift will have an inbound call queue. When an RM's queue is empty, the system will assign the next highest priority customer to them taking into account package compatability. Ideally the system will match customers with RMs that are knowledgeable about the package being sold, but during peak hours this efficiency may be lowered to reduce call wait time for customers.
+
 - **How might we route customers between the automated system and relationship managers?**
+
+The automated voice system will help disguise longer customer queue wait times by allowing them to answer basic questions before talking to an RM. The system will query questions to the customers waiting in queue and store this information in the customer database. After these questions are answered, the customer will be eligble for connection to an RM. The call/routing engineer can configure the questions being asked, or if the automated voice system will be used at all (if queue times are already very short, it is better to instantly connect to an RM).
 
 - **How might we organise calling customers based on priority?**
 
+The system will attempt analyse the customer's purchase probability based on current data and past purchases. If they are a repeat customer, they are given higher priority over others. Similarly a regular/previous call record would indicate higher retention, and so they are given higher priority. The accuracy of analysing purchase probability can be enhanced by the automated voice system asking targetted questions, such as asking what the purpose of their call is.
+
 - **How might we solicit information from customers during peak hours using an automated voice system?**
+
+The call/routing engineer will be tasked with setting which questions will be asked by the automated voice system. When a customer calls and is routed to the automatic system, these questions will be presented to them in voice form and require input on caller's number pad.
 
 - **How might we track customer statistics and information to determine purchase probability?**
 
+All statistics and data will be stored in their relevant tables in a database. The database will contain tables for customers, relationship managers, and packages. The database engineer will be tasked with maintaining this database for the system.
 
 # Explain the use of Scrum
 > Explain the agile methodology, namely, Scrum you have used to carry out the procedure. In
