@@ -1,4 +1,9 @@
 # G4-ISDM-Project
+**Authored by:**
+12884843 - Nathan Luu - (Github: nath1100)
+xxxxxxxx - Daniel - (Github: Danielfont)
+xxxxxxxx - Pual Le - (Github: G4-Paul-Le)
+xxxxxxxx - Jamane - (Github: Jam-Marcelino)
 
 # Objective outline and problem definition
 > (Steps 1 and 2 of Design Thinking Methodology)
@@ -68,7 +73,7 @@ Outbound calls are a new feature to the system not present in the current/old sy
 
 - **How might we match relationship managers with customers based on their interests/skills/experiences?**
 
-Customer data in the database will include tags that are matched with tags in the relationship manager database. RM to customer compatibility will be determined based on these matching properties. Holiday packages that the customer is interested in will contribute significantly to RM-customer matching. Customer type will be determined by the holiday package they are most likely to buy (either inferred by the system or by questions answered by the automatic voice system) and this will be the main factor that matches them to an RM. Customer and RM tag similarity (language, heritage/country of origin, etc) will then be used to decide between which RMs the customer should be matched with shouldd there be multiple RMs on shift who handle the same packages.
+Customer data in the database will include tags that are matched with tags in the relationship manager database. RM to customer compatibility will be determined based on these matching properties. Holiday packages that the customer is interested in will contribute significantly to RM-customer matching. Customer type will be determined by the holiday package they are most likely to buy (either inferred by the system or by questions answered by the automatic voice system) and this will be the main factor that matches them to an RM. Customer and RM tag similarity (language, heritage/country of origin, etc) will then be used to decide between which RMs the customer should be matched with should there be multiple RMs on shift who handle the same packages.
 
 - **How might we organise relevant information for relationship managers when we connect them to outbound calls with prospective customers?**
 
