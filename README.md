@@ -109,7 +109,15 @@ your explanation, ensure that you outline activities from Scrum that you use.
 
 
 # Assumptions
-> List assumptions you have made in the systems analysis.
+The specifications document identifies a database which the call management system will use to store customer, relationship manager, and package data. The document notes the travel company is _major_ in size, meaning it is likely the company has multiple branch offices/agencies located in different areas. Due to this it is unclear whether the database mention is centralised at a datacenter or local to each branch. For this report, it is assumed that the database is housed locally on a branch level, and that the system operates at the branch level as well.
+
+The Interactive Voice Response unit (also referred to as automatic voice system in this report) mentioned in the document specifies that it prompts customers for options and may ask for call reasons. In this report it is assumed that the voice response system interfaces only with calls and involves simple pre-recorded questions. Customers respond to these by pressing numbers on their keypad which the system will wait for. It is further assumed that a call engineer is capable of customising the pre-recorded messages and inputs.
+
+When too many customers call at once, it is assumed they are placed onto a singular sorted queue before being routed to relationship managers whenever they are free/idle.
+
+It is assumed that when a customer calls out of business hours, the system will automatically play a pre-recorded message stating such before rejecting their call.
+
+It is assumed in this report that customers consent to their data being used by the system and stored in the database. For the sake of simplicity, all non-repeat customers who have not have consented to the storing of their data are estimated to have a low purchase probability (and thus lower priority).
 
 
 # Gain and Risk
