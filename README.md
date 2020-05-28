@@ -1,4 +1,9 @@
 # G4-ISDM-Project
+**Authored by:**
+12884843 - Nathan Luu - (Github: nath1100)
+xxxxxxxx - Daniel - (Github: Danielfont)
+xxxxxxxx - Pual Le - (Github: G4-Paul-Le)
+xxxxxxxx - Jamane - (Github: Jam-Marcelino)
 
 # Objective outline and problem definition
 > (Steps 1 and 2 of Design Thinking Methodology)
@@ -52,24 +57,114 @@ The following POV statements reflect the requirements of the new system and its 
 
 **Call/Routing engineer** is responsible for the operation of the in-house call management centre software. They are responsible for the maintenance of the system (both old and new) and its day to day operation.
 
-# Approach
-> Describe your approach from a Design Thinking principles perspective.
+
+# Design Thinking Approach
+
+### How might we (HMW) statements and brainstorming
+The following HMW statements are developed from the earlier POV statements. A brainstorming section is added for each HMW statement specifying how each statement can be solved.
+
+- **How might we develop a call management system that will organise currently employed relationship managers based on their strengths and past experiences?**
+
+Relationship managers all have varying past experiences (travelling to different countries, varying cultural background, etc.) so organising them based on valuable assets and skillsets will allow the system to evaluate which relationship managers are best grouped together on shift. The skillsets of RMs on shift together should encompass all (or most) holiday packages being sold by the agency so that all customers can be answered to by a RM. Packages that sell more often should have a greater number of RMs to accommodate for increased customers. The system will quantify the skills of relationship managers based on the properties of packages, such as country/destination, cultural significance, language, attraction type (honeymoon, urban/natural sightseeing, heritage exploration, etc.). The system will generate package scores for each RM based on how many tags/properties match. A higher score signifies a greater understanding/ability to sell the holiday package by the RM.
+
+- **How might we use the call system to bring in new customers that would not ordinarly call themselves?**
+
+Outbound calls are a new feature to the system not present in the current/old system. The goal of outbound calls is to expand the existing customer base. The system will automatically search through a customer database where phone numbers are indexed. Customer details will also be included in this database, such as name, address, and any important data that will aid in the RM's understanding of the customer. During work hours, the system will analyse all RMs on shift and reference the database for potential customers based on available RM skillsets. Each selected customer will then be assigned a holiday package that the system determines they are most likely to purchase. Customers are then prioritised based on purchase probability, and then assigned to RMs on shift depending on RM availability and RM knowledge/skillset (whether the customer's package matches the RM). Each RM will then be queued with their assigned customers. Whenever they are idle, the system will automatically dial the customer for them and direct the call to the RM.
+
+- **How might we match relationship managers with customers based on their interests/skills/experiences?**
+
+Customer data in the database will include tags that are matched with tags in the relationship manager database. RM to customer compatibility will be determined based on these matching properties. Holiday packages that the customer is interested in will contribute significantly to RM-customer matching. Customer type will be determined by the holiday package they are most likely to buy (either inferred by the system or by questions answered by the automatic voice system) and this will be the main factor that matches them to an RM. Customer and RM tag similarity (language, heritage/country of origin, etc) will then be used to decide between which RMs the customer should be matched with should there be multiple RMs on shift who handle the same packages.
+
+- **How might we organise relevant information for relationship managers when we connect them to outbound calls with prospective customers?**
+
+The system will automatically sort through the list of outbound customers and match them with qualified relationship managers. The system will organise which packages the customer is most likely to purchase, which will be known to the relationship manager in advance. Any relevant information regarding the holiday package stored in the system will be given to the relationship manager in advance to supplement their sales effort during the call.
+
+- **How might we add newly hired relationship managers to the system?**
+
+Newly hired relationship managers will have their profiles initialised upon hiring. Basic information such as name, country of origin, date of birth, visited countries, etc. will be input into the system and stored in the database. The system will use this to build their profile and determine which packages the RM is best suited to selling. IT/database engineers will be tasked with adding new RMs to the system.
+
+- **How might we pair customers who call?**
+
+All customers who call in will be organised into a master queue by the system where they are organised based on priority. Customers that are more likely to purchase packages (determined by the system) will be prioritised higher. Each RM on shift will have an inbound call queue. When an RM's queue is empty, the system will assign the next highest priority customer to them taking into account package compatability. Ideally the system will match customers with RMs that are knowledgeable about the package being sold, but during peak hours this efficiency may be lowered to reduce call wait time for customers.
+
+- **How might we route customers between the automated system and relationship managers?**
+
+The automated voice system will help disguise longer customer queue wait times by allowing them to answer basic questions before talking to an RM. The system will query questions to the customers waiting in queue and store this information in the customer database. After these questions are answered, the customer will be eligble for connection to an RM. The call/routing engineer can configure the questions being asked, or if the automated voice system will be used at all (if queue times are already very short, it is better to instantly connect to an RM).
+
+- **How might we organise calling customers based on priority?**
+
+The system will attempt analyse the customer's purchase probability based on current data and past purchases. If they are a repeat customer, they are given higher priority over others. Similarly a regular/previous call record would indicate higher retention, and so they are given higher priority. The accuracy of analysing purchase probability can be enhanced by the automated voice system asking targetted questions, such as asking what the purpose of their call is.
+
+- **How might we solicit information from customers during peak hours using an automated voice system?**
+
+The call/routing engineer will be tasked with setting which questions will be asked by the automated voice system. When a customer calls and is routed to the automatic system, these questions will be presented to them in voice form and require input on caller's number pad.
+
+- **How might we track customer statistics and information to determine purchase probability?**
+
+All statistics and data will be stored in their relevant tables in a database. The database will contain tables for customers, relationship managers, and packages. The database engineer will be tasked with maintaining this database for the system.
 
 # Explain the use of Scrum
 > Explain the agile methodology, namely, Scrum you have used to carry out the procedure. In
 your explanation, ensure that you outline activities from Scrum that you use.
 
+
 # Assumptions
-> List assumptions you have made in the systems analysis.
+The specifications document identifies a database which the call management system will use to store customer, relationship manager, and package data. The document notes the travel company is _major_ in size, meaning it is likely the company has multiple branch offices/agencies located in different areas. Due to this it is unclear whether the database mention is centralised at a datacenter or local to each branch. For this report, it is assumed that the database is housed locally on a branch level, and that the system operates at the branch level as well.
+
+The Interactive Voice Response unit (also referred to as automatic voice system in this report) mentioned in the document specifies that it prompts customers for options and may ask for call reasons. In this report it is assumed that the voice response system interfaces only with calls and involves simple pre-recorded questions. Customers respond to these by pressing numbers on their keypad which the system will wait for. It is further assumed that a call engineer is capable of customising the pre-recorded messages and inputs.
+
+When too many customers call at once, it is assumed they are placed onto a singular sorted queue before being routed to relationship managers whenever they are free/idle.
+
+It is assumed that when a customer calls out of business hours, the system will automatically play a pre-recorded message stating such before rejecting their call.
+
+It is assumed in this report that customers consent to their data being used by the system and stored in the database. For the sake of simplicity, all non-repeat customers who have not have consented to the storing of their data are estimated to have a low purchase probability (and thus lower priority).
+
 
 # Gain and Risk
 > Discuss the competitive advantages might be gained in developing the new information
 system. Identify and discuss the possible adverse effects for this Business if its information
 system project fails.
+
 Better tailored holiday packages, advice is given off a (firsthand) experience so the customer will have a more enjoyable time, matching similar RM's and end users means RM's can advise on what they wanted to change about their own experience and pass it to the end user. This more tailored package means customers are offered a specific type of product and not a generic product that other travel companies might offer which might have included poor activities.  
 Customers develop deeper connections if the RM they are talking to is able to personalise a trip based on past experience, which from a business perspective means they are able to upsell/add to the product meaning higher profits.
 failure can refer to failure in development which means money invested is waste or another type of failure is performanc/security failure where it can be hacked?
 
-### Note
-> Document in GitHub all your iteration and models as you progress.
-> Q/A session used in problem definition must be added to the appendix of the report
+
+# Appendix
+
+### Q and A roleplay with relevant stakeholders
+
+### Analyst/Developer (A) and End user (U)
+**A:** What is your main reason for using a travel company?
+
+**U:** I want to receive advice for a holiday or travel destination I have planned. A travel company will help me plan my itinerary.
+
+**A:** Why would you prefer to call the travel company over visiting in person?
+
+**U:** Calling is helpful when I don't have the time to visit or there are no agencies near me.
+
+**A:** What do you expect as a service from the employee answering your call?
+
+**U:** I expect them to be able to help me with any questions I have regarding the travel destination and for them to be knowledgeable enough to give me recommendations if I don't have any in mind.
+
+### Analyst/Developer (A) and Relationship Manager (R)
+**A:** What do you prefer about calls over direct customer visits?
+
+**R:** A call allows me to work without any consideraion of the customer, other than what they're saying. I can focus on the work itself.
+
+**A:** What's your biggest problem with the current calling system?
+
+**R:** Often when I answer a call, I am not well equipped to answer their questions as I only have general information prepared beforehand. While I may specialise in specific packages, such as Europe, customers could be calling about Japan or the Phillipines and I would have to quickly bring up material that I'm unfamiliar with.
+
+**A:** What do you expect out of the new system?
+
+**R:** I'd like customers tailored specifically to my skillset, so that I can easily answer their questions without getting flustered trying to bring up materials and details on the package I'm trying to sell. The interactive voice response unit will also give me time to breathe during peak hours, letting customers answer basic questions so I don't have to go through them myself.
+
+### Analyst/Developer (A) and Travel company/Product owner (P)
+**A:** What do you expect to gain from this new system?
+
+**P:** I expect a greater efficiency in call turnover rates and employee utilisation, allowing me to hire less relationship managers but have them work to their full potential. The call system should also be fast, as a lot of maintenance costs of the current call system goes to paying for long call times. This should give us a greater profit margin.
+
+**A:** What do you think of the outbound call system?
+
+**P:** I think it's great that it can bring in customers who are on the fence about their travel, or otherwise would have never heard of our agency before. I think it will greatly increase the number of customers we receive.
