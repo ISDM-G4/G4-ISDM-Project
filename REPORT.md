@@ -112,6 +112,12 @@ All statistics and data will be stored in their relevant tables in a database. T
 > Explain the agile methodology, namely, Scrum you have used to carry out the procedure. In
 your explanation, ensure that you outline activities from Scrum that you use.
 
+//Expand upon dot points
+- Roles: Product Owner, Scrum Master, Development Team
+- Use of sprints (lasting for a period of time), which include activities such as weekly meeetings and planning, development and testing to deliver a part of the product
+- Include use of product backlog of requirments, 
+
+
 
 # Assumptions
 The specifications document identifies a database which the call management system will use to store customer, relationship manager, and package data. The document notes the travel company is _major_ in size, meaning it is likely the company has multiple branch offices/agencies located in different areas. Due to this it is unclear whether the database mention is centralised at a datacenter or local to each branch. For this report, it is assumed that the database is housed locally on a branch level, and that the system operates at the branch level as well.
