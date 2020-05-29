@@ -7,7 +7,7 @@ xxxxxxxx - Daniel - (Github: Danielfont)
 
 12610440 - Paul Le - (Github: G4-Paul-Le)
 
-xxxxxxxx - Jamane - (Github: Jam-Marcelino)
+13559188- Jamane - (Github: Jam-Marcelino)
 
 
 # Objective outline and problem definition
