@@ -1,9 +1,14 @@
 # G4-ISDM-Project
 **Authored by:**
+
 12884843 - Nathan Luu - (Github: nath1100)
+
 xxxxxxxx - Daniel - (Github: Danielfont)
+
 xxxxxxxx - Pual Le - (Github: G4-Paul-Le)
+
 xxxxxxxx - Jamane - (Github: Jam-Marcelino)
+
 
 # Objective outline and problem definition
 > (Steps 1 and 2 of Design Thinking Methodology)
