@@ -132,13 +132,12 @@ It is assumed in this report that customers consent to their data being used by 
 
 
 # Gain and Risk
-> Discuss the competitive advantages might be gained in developing the new information
-system. Identify and discuss the possible adverse effects for this Business if its information
-system project fails.
 
-Better tailored holiday packages, advice is given off a (firsthand) experience so the customer will have a more enjoyable time, matching similar RM's and end users means RM's can advise on what they wanted to change about their own experience and pass it to the end user. This more tailored package means customers are offered a specific type of product and not a generic product that other travel companies might offer which might have included poor activities.  
-Customers develop deeper connections if the RM they are talking to is able to personalise a trip based on past experience, which from a business perspective means they are able to upsell/add to the product meaning higher profits.
-failure can refer to failure in development which means money invested is waste or another type of failure is performanc/security failure where it can be hacked?
+In a market saturated with travel agencies offering the same category of product, the process in which it is sold can be the factor seperating companies apart, creating the competitive edge it needs to be a dominant leader in the industry. The importance of the new information system and the advantage it provides lies in the efficiency and relevance of the data as it is turned converted into meaningful information. 
+
+What the CMC System will do is sort customers and categorise them based on all types of factors but not limited to; age, gender, enthnicity, travel interests and budget. The system essentially personalises packages for the customer depending on their needs and wants but this is something any company can do. The underlying difference is that the CMC system will also personalise the Relationship Manager's (RM) own profile based on the above factors and match them with similar customers, meaning RM's can tailor make holiday packages based also on personal experience and not relying on automated algorithms like most systems do. The competitive advantage this creates is deeper connection and intimacy between RM and customer which is important in the sales of an expensive product such as this. It also creates a monetary advantage as it manifests loyalty in customers who can trust the expert advice of a human that has tailor made the product, leading to greater potential of not just returning customers but customers willing to purchase.
+
+With all systems problems are inevitable and can only be prevented, treated or minimised. The first effect of a failed system arises if the system is compromised in a way that leaks personal data of the customers including date of birth, credit card numbers and addresses which would most probably lead to a permanent closure of the business. However some lighter, more manageable failures could be in terms of performance where the system processes the data too slowly or inaccurately which means lesser customers or frustrated customers if advertised packages aren't relatable. Failure of the system could also be a negatve return on investment, where the implemented system is not performing as it should be, hence is not meeting the required profits to exceed the cost of implementation.   
 
 
 # Appendix
