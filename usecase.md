@@ -21,8 +21,11 @@
 7. RM accesses individual responses
 8. The use case ends.
  |
-| **Exceptions** | **Exception1. Step 1 – If the CMC system in not available and the system is down.
- Exception2. Unauthorised user attempts to access the database **** Exception3. No internet** |
+| **Exceptions** |
+1. If the CMC system in not available and the system is down
+2. Unauthorised user attempts to access the database
+3. No internet
+ |
 | **Includes/Extends/Inherits** | |
 | **Supporting Information** |
  |
@@ -37,7 +40,7 @@
 3. Step 6 of Main flow
  |
 | **Post-conditions** | The database has listed customers suitable for the RM |
-| **Exceptions** | Exception1.Steps1-2 – passenger closes the browser window anytime, and then the OT system blocks the transaction at that point in time and logs the activity. |
+| **Exceptions** | Same as above |
 
 | **Use Case ID** | UC102: Populate outbound queue |
 | --- | --- |
@@ -55,8 +58,11 @@
 4. RM calls customers
 5. The use case ends
  |
-| **Exceptions** | **Exception1. Step 1 – If the CMC system in not available and the system is down.
- Exception2. Phone lines are down **** Exception3. No internet** |
+| **Exceptions** |
+1. If the CMC system in not available and the system is down.
+2. Phone lines are down
+3. No internet
+ |
 | **Includes/Extends/Inherits** | IncludesExtended by UC104: Dial outbound customer |
 | **Supporting Information** |
  |
@@ -82,8 +88,11 @@
 8. System returns all customer data on that customer
 9. The use case ends.
  |
-| **Exceptions** | **Exception1. Step 1 – If the CMC system in not available and the system is down.
- Exception2. Unauthorised user attempts to access the database **** Exception3. No internet** |
+| **Exceptions** |
+1. If the CMC system in not available and the system is down.
+2. Unauthorised user attempts to access the database
+3. No internet
+ |
 | **Includes/Extends/Inherits** |
  |
 | **Supporting Information** |
@@ -98,7 +107,7 @@
 2. Step 8 of Main flow
  |
 | **Post-conditions** | The database has listed customers suitable for the RM |
-| **Exceptions** | Exception1. |
+| **Exceptions** | Same as above |
 
 | **Use Case ID** | UC104: Dial outbound customer |
 | --- | --- |
@@ -118,12 +127,12 @@
 6. RM calls customer
 7. The use case ends
  |
-| **Exceptions** | **Exception1. Step 1 – If the CMC system in not available and the system is down.
- Exception2. Phone lines are down **** Exception3. No internet** |
+| **Exceptions** |
+1. If the CMC system in not available and the system is down.
+2. Phone lines are down
+3. No internet
+ |
 | **Includes/Extends/Inherits** | IncludesExtended by |
 | **Supporting Information** |
  |
 | **Non-functional Requirements** | Performance: Page load timeSecurity: Only privileged employees can access customer data |
-
-Copyright Dr. Asif Q. Gill
-
