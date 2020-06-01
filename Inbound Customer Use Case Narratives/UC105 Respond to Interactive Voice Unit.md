@@ -6,7 +6,7 @@
 **User Story** | As a relationship manager I want customers to be directed to an automatic voice system so that I can handle increased call volumes.
 **Goal** | Customers should answer questions from the Interactive Voice Unit to relieve waiting time and burdens on RMs.
 **Priority** | High
-**Actors** | Primary Actor: Customer<br>Secondary Actor: Call management system
+**Actors** | Primary Actor: Call management system<br>Secondary Actor: Customer
 **Pre-conditions** | The customer has called the agency. The Interactive Voice Unit has been enabled and configured with questions.
 **Post-conditions** | The customer has successfully answered questions.
 **Trigger** | The customer calls the agency.
