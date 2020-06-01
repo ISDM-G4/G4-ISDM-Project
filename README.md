@@ -11,7 +11,6 @@
 
 
 # Objective outline and problem definition
-> (Steps 1 and 2 of Design Thinking Methodology)
 ### Objective
 The objective of the project is to improve the operation of the company's call management centre to increase sales efficiency. The project will implement several new functions to the system to achieve this goal, largely involving improving the effectiveness of relationship managers by matching their strengths with calling customers. The new system will also improve rate of calls and allow for flow control to maximise sales per call and reduce expenditure on call times.
 
@@ -109,15 +108,11 @@ The call/routing engineer will be tasked with setting which questions will be as
 All statistics and data will be stored in their relevant tables in a database. The database will contain tables for customers, relationship managers, and packages. The database engineer will be tasked with maintaining this database for the system.
 
 # Explain the use of Scrum
-> Explain the agile methodology, namely, Scrum you have used to carry out the procedure. In
-your explanation, ensure that you outline activities from Scrum that you use.
+Scrum was used to develop the various diagrams and models of the project. The team of four was divided into roles, with Nathan as the scrum master and Paul as the product owner.
 
-//Expand upon dot points
-- Roles: Product Owner, Scrum Master, Development Team
-- Use of sprints (lasting for a period of time), which include activities such as weekly meeetings and planning, development and testing to deliver a part of the product
-- Include use of product backlog of requirments, 
+The scrum master initially developed a backlog of user stories on Github Issues which was then used to develop the system use case diagram. Each Use case was related to a user story in the backlog (or often multiple), which were divided into two sprints. Due to the limited time remaining upon initiating scrum, the sprint cycles lasted only several days each. During the two cycles, all four members developed use case narratives and diagrams for any key use cases, which was then pushed to Github.
 
-
+Throughout the scrum cycle, online stand-up meetings were held to evaluate the general progress of the team and bring up any problems in the development of assigned tasks. This was done through the online messaging software Discord.
 
 # Assumptions
 The specifications document identifies a database which the call management system will use to store customer, relationship manager, and package data. The document notes the travel company is _major_ in size, meaning it is likely the company has multiple branch offices/agencies located in different areas. Due to this it is unclear whether the database mention is centralised at a datacenter or local to each branch. For this report, it is assumed that the database is housed locally on a branch level, and that the system operates at the branch level as well.
@@ -132,7 +127,6 @@ It is assumed in this report that customers consent to their data being used by 
 
 
 # Gain and Risk
-
 In a market saturated with travel agencies offering the same category of product, the process in which it is sold can be the factor seperating companies apart, creating the competitive edge it needs to be a dominant leader in the industry. The importance of the new information system and the advantage it provides lies in the efficiency and relevance of the data as it is turned converted into meaningful information. 
 
 What the CMC System will do is sort customers and categorise them based on all types of factors but not limited to; age, gender, enthnicity, travel interests and budget. The system essentially personalises packages for the customer depending on their needs and wants but this is something any company can do. The underlying difference is that the CMC system will also personalise the Relationship Manager's (RM) own profile based on the above factors and match them with similar customers, meaning RM's can tailor make holiday packages based also on personal experience and not relying on automated algorithms like most systems do. The competitive advantage this creates is deeper connection and intimacy between RM and customer which is important in the sales of an expensive product such as this. It also creates a monetary advantage as it manifests loyalty in customers who can trust the expert advice of a human that has tailor made the product, leading to greater potential of not just returning customers but customers willing to purchase.
