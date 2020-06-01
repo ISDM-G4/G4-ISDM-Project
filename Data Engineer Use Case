@@ -1,0 +1,29 @@
+# Enable Disable Interactive Voice Unit
+
+**Header** | **Info**
+--- | ---
+**Use Case ID** | UC#123: Initialise Relationship Manager Profile
+**User Story** | As a Database engineer, it is my responsibility to use the stakeholder requirements to design and build a database
+**Goal** | To fulfill the project owner and user requirements
+**Priority** | High
+**Actors** | Primary Actor - Database engineer
+**Pre-conditions** | There is a requirement to initialise the database profiles
+**Post-conditions** | The requirements are met
+**Trigger** | The engineer is requested to initialise the profiles in the database.
+**Main Flow** | 1. Recieve requests for to create <br> 2. Using the requirements and use cases, design the profile <br> 3. Build and test
+**Supporting Information** | 
+**Non-functional Requirements** | 
+
+**Header** | **Info**
+--- | ---
+**Use Case ID** | UC#124: Maintain Database
+**User Story** | As a Database engineer, it is my responsibility to maintain and upkeep the database software and hardware
+**Goal** | To ensure the system keeps functioning and fulfilling the needs of the users
+**Priority** | Medium
+**Actors** | Primary Actor - Database engineer - Call Engineer
+**Pre-conditions** | The database has is running
+**Post-conditions** | The errors are fixed
+**Trigger** | There is an error caused by some unresolved code or hardware failure or data error
+**Main Flow** | 1. The engineer observes or is told that there is an error in the system, or that the system needs to have a regular check<br>2. The engineer figures out the source of the issue, and if needed, requests the call engineer to stop the system (If any) <br>3. The Engineer resolves the issue
+**Supporting Information** | 
+**Non-functional Requirements** | .
