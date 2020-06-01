@@ -3,14 +3,14 @@
 **Header** | **Info**
 --- | ---
 **Use Case ID** | UC#123: Initialise Relationship Manager Profile
-**User Story** | As a Database engineer, it is my responsibility to use the stakeholder requirements to design and build a database
-**Goal** | To fulfill the project owner and user requirements
-**Priority** | High
+**User Story** | As a Database engineer, it is my responsibility to create staff profiles for 
+**Goal** | To create a profile for a Relationship Manager
+**Priority** | Medium
 **Actors** | Primary Actor - Database engineer
-**Pre-conditions** | There is a requirement to initialise the database profiles
+**Pre-conditions** | There is a requirement to initialise the database profiles for staff members
 **Post-conditions** | The requirements are met
 **Trigger** | The engineer is requested to initialise the profiles in the database.
-**Main Flow** | 1. Recieve requests for to create <br> 2. Using the requirements and use cases, design the profile <br> 3. Build and test
+**Main Flow** | 1. Recieve requests for to create a profile <br> 2. Gather their information and the profile template <br> 3. Build and test the profile
 **Supporting Information** | 
 **Non-functional Requirements** | 
 
