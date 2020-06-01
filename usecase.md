@@ -20,10 +20,12 @@
 6. System returns the list of chosen customers
 7. RM accesses individual responses
 8. The use case ends.
- |
-| **Exceptions** | **Exception1. Step 1 – If the CMC system in not available and the system is down.
- Exception2. Unauthorised user attempts to access the database **** Exception3. No internet** |
-| **Includes/Extends/Inherits** | |
+
+**Exceptions** 
+**Exception1. Step 1 – If the CMC system in not available and the system is down.
+ Exception2. Unauthorised user attempts to access the database 
+ Exception3. No internet** |
+| **Includes/Extends/Inherits** | 
 | **Supporting Information** |
  |
 | **Non-functional Requirements** | Performance: Page load timeSecurity: Only privileged employees can access customer data |
