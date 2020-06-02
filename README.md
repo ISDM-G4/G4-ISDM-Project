@@ -173,4 +173,4 @@ With all systems problems are inevitable and can only be prevented, treated or m
 
 **P:** I think it's great that it can bring in customers who are on the fence about their travel, or otherwise would have never heard of our agency before. I think it will greatly increase the number of customers we receive.
 
-# Link you video presentation:
+# Link to video presentation:
